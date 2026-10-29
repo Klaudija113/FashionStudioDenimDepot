@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Denim Depot – Fashion Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#263250;--blue:#2b3a7a;--red:#b5322a;--bg:#fcfcfc;--ink:#1c2540;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.w{max-width:1250px;margin:0 auto;padding:0 20px}
+header .w{display:flex;justify-content:space-between;align-items:center;height:clamp(80px,11.8vw,175px);max-width:1484px;padding:0 9%}
+.lg{display:flex;align-items:flex-end;gap:10px}.lg img{width:clamp(110px,17.9vw,265px)}
+.bc{font-size:10px;margin-bottom:6px;white-space:nowrap}
+nav{display:flex;gap:clamp(10px,1.7vw,25px);font-weight:500;font-size:clamp(13px,1.6vw,22px)}
+nav a:hover,nav a.on{text-decoration:underline;text-underline-offset:6px}
+.hero{position:relative;aspect-ratio:1484/543;background-size:cover;background-position:center;color:#fff}
+.hero h1{margin:0;font-weight:300;line-height:1.05;font-size:clamp(26px,6.3vw,94px)}
+.hero p{margin:.5em 0 0;font-weight:300;font-size:clamp(14px,3.2vw,48px)}
+.ht{position:absolute;top:50%;transform:translateY(-50%);left:9.4%}
+.ht.r{left:auto;right:6.8%;text-align:right}.ht.d{color:var(--ink)}
+.ht.r h1{font-size:clamp(26px,5.2vw,78px)}.ht.r p{font-size:clamp(13px,2.7vw,40px)}
+.strip{width:100%;height:auto;padding:8px 0 40px}
+.bar{height:clamp(14px,2.4vw,35px);background:var(--navy);max-width:1244px;margin:0 auto}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:clamp(30px,6vw,90px) 20px}
+.two h2{margin:0;font-weight:300;font-size:clamp(24px,3.1vw,46px);line-height:1.2}
+.two b{font-size:clamp(15px,1.6vw,22px);font-weight:600}.two p{font-size:clamp(11px,1vw,14px);line-height:1.5;margin:.9em 0 0;font-weight:500}
+.tex{position:relative;isolation:isolate;padding:clamp(24px,3vw,44px) 0 clamp(50px,9vw,130px)}
+.tex::before{content:"";position:absolute;inset:0;z-index:-1;background:url(bilder/textur.jpg) center/cover;opacity:.15}.tex>.w{position:relative}.tex h2{font-weight:300;font-size:clamp(20px,3.1vw,46px);margin:0 0 30px;letter-spacing:-.02em}
+.tex img{width:100%}
+.rl{border-top:clamp(4px,.5vw,8px) solid var(--red)}
+.p2{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:clamp(24px,4vw,50px) 20px;color:var(--blue)}
+.p2 h2{margin:0 0 clamp(20px,4vw,60px);font-weight:400;font-size:clamp(24px,3vw,44px);line-height:1.2}
+.p2 p{font-size:clamp(11px,1vw,14px);line-height:1.5;color:var(--ink);margin:0}
+.p2 .c{text-align:right;font-size:clamp(18px,2.7vw,40px);line-height:1.25;color:var(--ink)}
+.p2 .t{display:flex;gap:14px;justify-content:flex-end;align-items:center;color:var(--blue);margin-top:14px}.p2 .t svg{width:1.5em;height:1.5em;fill:#000}
+.best{color:var(--blue);font-weight:400;font-size:clamp(20px,3vw,44px);line-height:1.3;padding:clamp(40px,8vw,120px) 20px clamp(20px,3vw,50px)}.best b{font-weight:600}
+.ph{padding-bottom:clamp(40px,8vw,120px)}.ph img{width:100%}
+.ct{background:var(--navy);color:#fff;padding:clamp(30px,4vw,60px) 0 clamp(40px,5vw,70px)}
+.ct h2{font-weight:300;font-size:clamp(20px,3vw,44px);margin:0 0 30px}
+.cg{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(20px,3vw,45px)}
+.ct h3{font-weight:400;font-size:clamp(16px,1.6vw,24px);margin:0 0 14px}.ct p{font-size:clamp(11px,.9vw,13px);line-height:1.6;margin:0 0 30px}
+.ct .tel{font-size:clamp(16px,1.7vw,25px);font-weight:500;margin:0 0 28px}
+.fb{display:flex;align-items:center;gap:14px;font-size:clamp(15px,1.5vw,22px)}.fb span{width:56px;height:56px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.map{padding:clamp(30px,4vw,60px) 20px}
+footer{background:var(--navy);color:#fff;padding:clamp(40px,8vw,110px) 0 18px}
+.vt{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:20px;align-items:center}
+.vt h2{margin:0;font-weight:300;font-size:clamp(22px,3vw,44px);line-height:1.2}
+.vt div{display:flex;gap:14px;align-items:center}.vt i{font-style:normal;font-weight:300;font-size:clamp(50px,7vw,110px);line-height:1}
+.vt span{font-size:clamp(11px,1vw,14px);line-height:1.35}
+.imp{display:inline-block;margin-top:clamp(30px,5vw,70px);font-size:14px}.imp:hover{text-decoration:underline}.ml{margin:16px 0 0;font-size:clamp(14px,1.3vw,18px);font-weight:500}.ml a{text-decoration:underline;text-underline-offset:4px}
+.sm{margin:50px 0 0;font-size:10px;opacity:.6;text-align:center}
+.pg{display:none}.pg.on{display:block}
+@media(max-width:700px){.two,.p2,.cg{grid-template-columns:1fr}.vt{grid-template-columns:1fr 1fr}.p2 .c,.p2 .t{text-align:left;justify-content:flex-start}.bc{display:none}}
+</style></head><body>
+<header><div class="w"><a class="lg" href="#startseite"><img src="bilder/logo.jpg" alt="Fashion Studio Denim Depot"><span class="bc" id="bc"></span></a>
+<nav><a href="#startseite" data-p="startseite">Startseite</a><a href="#wir-lieben-jeans" data-p="wir-lieben-jeans">Wir lieben Jeans</a><a href="#kontakt" data-p="kontakt">Kontakt</a></nav></div></header>
+
+<main>
+<section class="pg" id="startseite">
+<div class="hero" style="background-image:url(bilder/hero-startseite.jpg)"><div class="ht"><h1>ZEITLOSE<br>ALLROUNDER</h1><p>FÜR JEDE GELEGENHEIT</p></div></div>
+<img class="strip" src="bilder/marken-leiste.jpg" alt="Marken: New Twenty, COJ, naketano, Heimatliebe, MAC, Dockers, Levi's, Paddock's, Cross, H.I.S, Lee, Pioneer, Vittozzi">
+<div class="bar"></div>
+<div class="w two"><h2>Kulthosen<br>für jeden<br>Geschmack</h2><div><b>auf 260 m² Ladenfläche!</b><p>Jeans ist nicht gleich Jeans. Und es ist nicht Jacke wie Hose, nach welchem Modell Sie greifen. Wir bieten Ihnen eine riesige Auswahl – auch Überlängen von 38 Inch Länge und 48 Inch Weite halten wir für Sie bereit. Auf einen Blick erkennen wir, welche Hose Ihnen wie angegossen passt und begleiten Sie auf dem Weg zu Ihrer neuen Traumjeans. Vertrauen Sie auf unsere über 30-jährige Erfahrung und werden Sie mit dem passenden Modell zum echten Hingucker!</p></div></div>
+<div class="bar"></div>
+<div class="tex" style="margin-top:clamp(20px,3vw,40px)"><div class="w" style="max-width:1484px;padding:0 5%"><h2>Hosenklassiker der großen Jeans-Hersteller aus aller Welt</h2><img src="bilder/marken-raster.jpg" alt="Jeans-Marken: Cross, H.I.S, Paddock's, Pioneer, Vinzoni, naketano, Lee, COJ, Heimatliebe, Levi's, Blue Monkey, MAC, Wrangler, Vittozzi"></div></div>
+</section>
+
+<section class="pg" id="wir-lieben-jeans">
+<div class="hero" style="background-image:url(bilder/hero-wir-lieben-jeans.jpg)"><div class="ht r"><h1>LÄSSIGE<br>ALLROUNDER,</h1><p>DIE NIE AUS DER MODE KOMMEN</p></div></div>
+<img class="strip" src="bilder/marken-leiste.jpg" alt="Marken">
+<div class="rl"></div>
+<div class="w p2"><div><h2>Nur eine Hose?<br>Von wegen!</h2><p>Sie gehört zu den meistverkauften Kleidungsstücken der Welt. Kein Wunder! Schließlich tragen sich Jeans durch alle Kulturen und bedeuten Freiheit – auch beim Styling: Angefangen beim relaxten Boyfriend-Stil über trendige Jeans mit hohem Bund bis hin zu knöchellangen Girlfriend-Hosen geben Sie Ihnen für jeden Anlass den passenden Look.<br>Sie haben noch keinen solchen Hosenklassiker zu Hause? Dann schauen Sie in unserem Jeans House Hamburg vorbei – wir beraten Sie kompetent und mit Liebe zum Detail.</p></div>
+<div class="c">Wir lieben Mode –<br>Sie auch? Rufen Sie uns an!<div class="t"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.300.2 2.500.6 3.600.1.300 0 .700-.2 1z"/></svg><a href="tel:+494068915830">Tel.: 040 – 68 91 58 30</a></div></div></div>
+<div class="rl"></div>
+<div class="w best">Das Beste:<br><b>Wir bieten Ihnen</b> das ganze Jahr über Einzelstücke zum halben Preis!</div>
+<div class="w ph"><img src="bilder/fotos.jpg" alt="Jeans-Looks"></div>
+</section>
+
+<section class="pg" id="kontakt">
+<div class="hero" style="background-image:url(bilder/hero-kontakt.jpg)"><div class="ht d"><h1>FINDEN SIE IHRE<br>JEANS</h1><p>FÜR DEN PERFEKTEN LOOK</p></div></div>
+<img class="strip" src="bilder/marken-leiste.jpg" alt="Marken">
+<div class="ct"><div class="w" style="max-width:1484px;padding:0 9%"><h2>Kontaktieren Sie uns – und finden Sie Ihre Lieblingsjeans!</h2>
+<div class="cg"><img src="bilder/ladenfoto.jpg" alt="Jeans House Wandsbeker Allee"><div>
+<h3>Unsere Öffnungszeiten</h3><p>Mo.-Fr. &nbsp;&nbsp; 10:00–19:00 Uhr<br>Sa. &nbsp;&nbsp; 10:00–16:00 Uhr</p>
+<h3>Hier finden Sie uns</h3><p>Jeans House Ohlrogge GmbH &amp; Co. KG<br>Wandsbeker Allee 68<br>22041 Hamburg</p>
+<div class="tel">Telefon: <a href="tel:+494068915830">040 – 68 91 58 30</a></div>
+<a class="fb" href="https://www.facebook.com/hamburgjeans/" target="_blank" rel="noopener"><span><svg width="26" height="26" viewBox="0 0 24 24" fill="#263250"><path d="M14 8V6.500c0-.700.200-1 1.100-1H17V2h-2.800C11.100 2 10 3.800 10 6.200V8H7.500v3.500H10V22h4V11.500h2.800L17.300 8z"/></svg></span>@Jeans-Hamburg</a></div></div></div></div>
+<div class="w map"><a href="https://www.google.com/maps/search/?api=1&query=Wandsbeker+Allee+68+22041+Hamburg" target="_blank" rel="noopener"><img src="bilder/karte.jpg" alt="Karte: Jeans House Ohlrogge, Wandsbeker Allee 68, Hamburg"></a><p class="ml"><a href="https://www.google.com/maps/search/?api=1&query=Wandsbeker+Allee+68+22041+Hamburg" target="_blank" rel="noopener">In Google Maps öffnen</a></p></div>
+</section>
+</main>
+
+<footer><div class="w" style="max-width:1484px;padding:0 9%">
+<div class="vt"><h2>IHRE<br>VORTEILE</h2><div><i>1</i><span>Freundliche &amp;<br>kompetente Beratung</span></div><div><i>2</i><span>Mehr als 30 Jahre<br>Beratung</span></div><div><i>3</i><span>Große Auswahl an<br>verschiedener Labels</span></div></div>
+<a class="imp" href="https://www.hamburg-jeans.de/impressum/" target="_blank" rel="noopener">IMPRESSUM</a>
+<p class="sm">Dies ist ein Studienprojekt von Klaudija Sragauskaite, Kunstschule Wandsbek.</p></div></footer>
+
+<script>
+var P=['startseite','wir-lieben-jeans','kontakt'],T={'wir-lieben-jeans':'Startseite &gt; Wir lieben Jeans',kontakt:'Startseite &gt; Kontakt'};
+function go(){var h=(location.hash||'').slice(1);if(P.indexOf(h)<0)h='startseite';
+P.forEach(function(p){document.getElementById(p).classList.toggle('on',p===h)});
+document.querySelectorAll('nav a').forEach(function(a){a.classList.toggle('on',a.dataset.p===h)});
+document.getElementById('bc').innerHTML=T[h]||'';window.scrollTo(0,0)}
+addEventListener('hashchange',go);go();
+</script></body></html>
